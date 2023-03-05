@@ -18,7 +18,7 @@ MAX_DENSITY_EDGE = 1
 pygame.init()
 pygame.time.set_timer(display, 20)
 pygame.time.set_timer(apparition, 200)
-image = pygame.image.load('background.jpg')
+image = pygame.image.load('media/background.jpg')
 image = pygame.transform.scale(image, (1000,1000))
 
 class Graph():
@@ -228,7 +228,7 @@ class People:
                     #pygame.draw.rect(screen, (244,202,15), pygame.Rect(float(people.position['coord_x_y'][0])*0.265 -2, float(people.position['coord_x_y'][1])*0.35   , PEOPLE_SIZE*2, PEOPLE_SIZE*2))
                     from pygame import mixer
                     mixer.init() 
-                    sound=mixer.Sound("sound.wav")
+                    sound=mixer.Sound("media/sound.wav")
                     sound.play()
                     """print('peop world',len(world.peoples))
                     print(len(self.position['current_edge'].people_on_edge[self.position['coord_on_edge']]))

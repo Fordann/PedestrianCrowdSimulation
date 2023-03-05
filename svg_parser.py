@@ -1,7 +1,7 @@
 from xml.dom import minidom
 import math
 
-doc = minidom.parse("BACK_test.svg")  # parseString also exists
+doc = minidom.parse("media/BACK_test.svg")  # parseString also exists
 path_strings = [path.getAttribute('d') for path in doc.getElementsByTagName('path')]
 
 categories = [element for element in doc.getElementsByTagName('g')][1:]
